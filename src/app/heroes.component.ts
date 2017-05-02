@@ -62,6 +62,7 @@ import { OnInit } from '@angular/core';
       </li>
     </ul>
     <hero-detail [hero]="selectedHero"></hero-detail>
+    <router-outlet></router-outlet>
   `,
 })
 

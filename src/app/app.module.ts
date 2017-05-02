@@ -8,22 +8,22 @@ import { RouterModule }  from '@angular/router';
 
 import { AppComponent }  from './app.component';
 
-RouterModule.forRoot([
-  {
-    path: 'heroes',
-    component: HeroesComponent
-  }
-])
+
 
 @NgModule({
   imports:      [
     BrowserModule,
     FormsModule,
+    RouterModule.forRoot([
+      {
+        path: 'heroes',
+        component: HeroesComponent
+      }
+    ])
    ],
   declarations: [
     AppComponent,
     HeroDetailComponent,
-    HeroesComponent,
     HeroesComponent,
    ],
    providers: [
