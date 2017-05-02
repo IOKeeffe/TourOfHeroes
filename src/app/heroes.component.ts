@@ -54,6 +54,7 @@ import { OnInit } from '@angular/core';
         border-radius: 4px 0 0 4px;
       }
     `],
+    
   template: `
     <h2>My Heroes</h2>
     <ul class="heroes">
