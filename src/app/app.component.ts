@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-export class hero {
+export class Hero {
   id: number;
   name: string;
 }
@@ -13,16 +13,15 @@ export class hero {
   <div><label>id: </label>{{hero.id}}</div>
   <div>
     <label>name: </label>
-    <input [(ngModel)]="hero.name"{{hero.name}}
+    <input [(ngModel)]="hero.name" placeholder="name">
   </div>
   `,
 })
 export class AppComponent  {
-  name = 'Angular';
   title = 'Tour of Heroes';
 
   hero: Hero = {
-  id: 1;
-  name: 'Power Fellow';
+    id: 1,
+    name: 'Power Fellow',
   };
 }
